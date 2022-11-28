@@ -1,0 +1,25 @@
+{
+  "name": "cheese-syntax-highlighting",
+  "displayName": "Cheese Syntax Highlighting",
+  "description": "Adds syntax highlighting for the cheese programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "cheese",
+      "aliases": ["Cheese", "cheese"],
+      "extensions": [".chs",".cheese"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "cheese",
+      "scopeName": "source.cheese",
+      "path": "./syntaxes/cheese.tmLanguage.json"
+    }]
+  }
+}
